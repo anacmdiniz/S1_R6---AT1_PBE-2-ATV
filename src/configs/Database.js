@@ -70,7 +70,7 @@ export async function initializeDatabase() {
                 preco DECIMAL(15,2) NOT NULL,
                 vinculoImagem VARCHAR(255) NOT NULL,
                 qtdEstoque DECIMAL(18,2) NOT NULL,
-                dataCad TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                dataCad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (id_categoria) REFERENCES categorias(id)
             );
         `);
